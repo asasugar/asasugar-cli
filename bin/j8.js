@@ -62,8 +62,8 @@ if (program.init) {
       const spinner = ora('正在从github下载...').start()
       download(
         answers.template
-          ? 'xxj95719/multi-page-app/tree/pug'
-          : 'xxj95719/multi-page-app/tree/html',
+          ? 'xxj95719/multi-page-app#pug'
+          : 'xxj95719/multi-page-app#html',
         answers.name,
         function(err) {
           if (!err) {
