@@ -1,7 +1,7 @@
 {
   "name": "j8-cli",
-  "version": "1.1.2",
-  "description": "生成多页应用模板cli工具",
+  "version": "1.1.6",
+  "description": "生成多页、单页应用模板cli工具",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
