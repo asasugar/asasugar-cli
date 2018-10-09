@@ -15,13 +15,13 @@ j8 -V
 j8 init
 ```
 
-## Yarn 安装
+## yarn
 
 ```bash
-#全局安装
+# 全局安装
 npm i yarn -g
 
-#设置镜像源
+# 设置镜像源
 yarn config set registry https://registry.npm.taobao.org --global
 yarn config set disturl https://npm.taobao.org/dist --global
 ```
