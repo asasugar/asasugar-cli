@@ -1,6 +1,6 @@
 {
   "name": "j8-cli",
-  "version": "1.1.6",
+  "version": "1.1.8",
   "description": "生成多页、单页应用模板cli工具",
   "main": "index.js",
   "scripts": {

@@ -61,7 +61,7 @@ if (program.init) {
     if (answers.type === 'MPA(多页应用)') {
       // MPA
       downloadUrl = answers.template
-        ? 'xxj95719/multi-page-app#pug'
+        ? 'xxj95719/multi-page-app'
         : 'xxj95719/multi-page-app#html'
     } else if (answers.type === 'Vue') {
       // Vue
