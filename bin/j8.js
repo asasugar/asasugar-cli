@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 const fs = require('fs')
 
 const program = require('commander') //可以解析用户输入的命令
@@ -14,12 +15,18 @@ program
 
 program.parse(process.argv)
 
-const question = [
-  {
+const question = [{
     type: 'list',
     message: `请选择项目类型? `,
     name: 'type',
     choices: ['MPA(多页应用)', 'Vue', 'React']
+  },
+  {
+    type: 'list',
+    message: `请选择终端? `,
+    name: 'terminal',
+    when: answers => answers.type === 'Vue',
+    choices: ['PC端', '移动端']
   },
   {
     type: 'input',
@@ -56,22 +63,23 @@ const question = [
 
 if (program.init) {
   console.info('')
-  inquirer.prompt(question).then(function(answers) {
+  inquirer.prompt(question).then(function (answers) {
     let downloadUrl
     if (answers.type === 'MPA(多页应用)') {
       // MPA
-      downloadUrl = answers.template
-        ? 'xxj95719/multi-page-app'
-        : 'xxj95719/multi-page-app#html'
+      downloadUrl = answers.template ?
+        'xxj95719/multi-page-app' :
+        'xxj95719/multi-page-app#html'
     } else if (answers.type === 'Vue') {
       // Vue
-      downloadUrl = 'xxj95719/vue-spa'
+      if (answers.terminal === 'PC端') downloadUrl = 'xxj95719/vue-spa'
+      else downloadUrl = 'xxj95719/vue-spa#vue-spa-mobile'
     } else if (answers.type === 'React') {
       // React
       downloadUrl = 'xxj95719/react-spa'
     }
     const spinner = ora('正在从github下载...').start()
-    download(downloadUrl, answers.name, function(err) {
+    download(downloadUrl, answers.name, function (err) {
       if (!err) {
         spinner.clear()
         console.info('')
@@ -109,7 +117,7 @@ if (program.init) {
             fs.writeFile(
               `${process.cwd()}/${answers.name}/package.json`,
               str,
-              function(err) {
+              function (err) {
                 if (err) throw err
                 process.exit()
               }
