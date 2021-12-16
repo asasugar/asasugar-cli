@@ -26,7 +26,7 @@ const question = [{
     message: `请选择终端? `,
     name: 'terminal',
     when: answers => answers.type === 'Vue',
-    choices: ['PC端', '移动端']
+    choices: ['PC端Vue3', 'PC端Vue2', '移动端Vue2']
   },
   {
     type: 'input',
@@ -68,15 +68,16 @@ if (program.init) {
     if (answers.type === 'MPA(多页应用)') {
       // MPA
       downloadUrl = answers.template ?
-        'xxj95719/multi-page-app' :
-        'xxj95719/multi-page-app#html'
+        'asasugar/multi-page-app' :
+        'asasugar/multi-page-app#html'
     } else if (answers.type === 'Vue') {
       // Vue
-      if (answers.terminal === 'PC端') downloadUrl = 'xxj95719/vue-spa'
-      else downloadUrl = 'xxj95719/vue-spa#vue-spa-mobile'
+      if (answers.terminal === 'PC端Vue3') downloadUrl = 'asasugar/vue-spa'
+      else if (answers.terminal === 'PC端Vue2') downloadUrl = 'asasugar/vue-spa#vue2-spa'
+      else downloadUrl = 'asasugar/vue-spa#vue-spa-mobile'
     } else if (answers.type === 'React') {
       // React
-      downloadUrl = 'xxj95719/react-spa'
+      downloadUrl = 'asasugar/react-spa'
     }
     const spinner = ora('正在从github下载...').start()
     download(downloadUrl, answers.name, function (err) {
@@ -96,7 +97,7 @@ if (program.init) {
         console.info(chalk.gray(`devServer: http://localhost:${answers.port}`))
         console.info('')
         console.info(
-          chalk.gray('参考文档: https://github.com/xxj95719/j8-cli/')
+          chalk.gray('参考文档: https://github.com/asasugar/j8-cli/')
         )
         console.info('')
         console.info(
@@ -126,7 +127,7 @@ if (program.init) {
         )
       } else {
         spinner.warn([
-          '发生错误，请在https://github.com/xxj95719/j8-cli/issues，Issues留言'
+          '发生错误，请在https://github.com/asasugar/j8-cli/issues，Issues留言'
         ])
         process.exit()
       }
