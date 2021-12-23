@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
@@ -15,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/asasug/web-temp-cli.git"
   },
-  "author": "Xiongjie Xue",
+  "author": "xuexiongjie",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
