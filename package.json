@@ -1,6 +1,6 @@
 {
   "name": "fast-web-cli",
-  "version": "1.1.9",
+  "version": "2.0.0",
   "description": "生成多页、单页应用模板cli工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
     "lib": "lib"
   },
   "bin": {
-    "j8": "./bin/index.js"
+    "fast-web-cli": "./bin/index.js"
   },
   "repository": {
     "type": "git",
