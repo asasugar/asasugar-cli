@@ -1,5 +1,5 @@
 {
-  "name": "fast-web-cli",
+  "name": "web-temp-cli",
   "version": "2.0.0",
   "description": "生成多页、单页应用模板cli工具",
   "scripts": {
@@ -9,11 +9,11 @@
     "lib": "lib"
   },
   "bin": {
-    "fast-web-cli": "./bin/index.js"
+    "web-temp-cli": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/asasug/fast-web-cli.git"
+    "url": "https://github.com/asasug/web-temp-cli.git"
   },
   "author": "Xiongjie Xue",
   "license": "ISC",

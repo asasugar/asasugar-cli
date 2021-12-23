@@ -10,7 +10,7 @@ const ora = require('ora') //小图标（loading、succeed、warn等）
 const package = require('../package')
 program
   .version(package.version)
-  .option('-i, init', '初始化fast-web-cli项目')
+  .option('-i, init', '初始化web-temp-cli项目')
   .parse(process.argv)
 
 program.parse(process.argv)
@@ -97,7 +97,7 @@ if (program.init) {
         console.info(chalk.gray(`devServer: http://localhost:${answers.port}`))
         console.info('')
         console.info(
-          chalk.gray('参考文档: https://github.com/asasugar/fast-web-cli/')
+          chalk.gray('参考文档: https://github.com/asasugar/web-temp-cli/')
         )
         console.info('')
         console.info(
@@ -127,7 +127,7 @@ if (program.init) {
         )
       } else {
         spinner.warn([
-          '发生错误，请在https://github.com/asasugar/fast-web-cli/issues，Issues留言'
+          '发生错误，请在https://github.com/asasugar/web-temp-cli/issues，Issues留言'
         ])
         process.exit()
       }
