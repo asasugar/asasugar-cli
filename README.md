@@ -1,4 +1,4 @@
-# j8-cli
+# fast-web-cli
 
 > 支持生成多页应用模板 cli 工具（目前支持生成 html 跟 pug 两种方式），单页应用支持 Vue 模板、React 模板
 
@@ -6,13 +6,13 @@
 
 ```bash
 # 全局安装cli
-npm i j8-cli -g
+npm i fast-web-cli -g
 
 # 查看版本
-j8 -V
+fast-web-cli -V
 
 # 创建项目
-j8 init
+fast-web-cli init
 ```
 
 ## yarn

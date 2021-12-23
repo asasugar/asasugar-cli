@@ -1,8 +1,7 @@
 {
-  "name": "j8-cli",
+  "name": "fast-web-cli",
   "version": "1.1.9",
   "description": "生成多页、单页应用模板cli工具",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +9,13 @@
     "lib": "lib"
   },
   "bin": {
-    "j8": "./bin/j8.js"
+    "j8": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xxj95719/j8-cli.git"
+    "url": "https://github.com/asasug/fast-web-cli.git"
   },
-  "author": "Ji_Brother",
+  "author": "Xiongjie Xue",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",

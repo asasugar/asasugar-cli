@@ -10,55 +10,55 @@ const ora = require('ora') //小图标（loading、succeed、warn等）
 const package = require('../package')
 program
   .version(package.version)
-  .option('-i, init', '初始化j8项目')
+  .option('-i, init', '初始化fast-web-cli项目')
   .parse(process.argv)
 
 program.parse(process.argv)
 
 const question = [{
-    type: 'list',
-    message: `请选择项目类型? `,
-    name: 'type',
-    choices: ['MPA(多页应用)', 'Vue', 'React']
-  },
-  {
-    type: 'list',
-    message: `请选择终端? `,
-    name: 'terminal',
-    when: answers => answers.type === 'Vue',
-    choices: ['PC端Vue3', 'PC端Vue2', '移动端Vue2']
-  },
-  {
-    type: 'input',
-    message: `项目名称: `,
-    name: 'name',
-    default: 'my-project'
-  },
-  {
-    type: 'input',
-    message: `项目描述: `,
-    name: 'description',
-    default: 'Description'
-  },
-  {
-    type: 'input',
-    message: `初始版本: `,
-    name: 'version',
-    default: '0.0.1'
-  },
-  {
-    type: 'input',
-    message: `server端口: `,
-    name: 'port',
-    default: '8080'
-  },
-  {
-    type: 'confirm',
-    message: `使用pug(jade)模版引擎? `,
-    name: 'template',
-    when: answers => answers.type === 'MPA(多页应用)',
-    default: true
-  }
+  type: 'list',
+  message: `请选择项目类型? `,
+  name: 'type',
+  choices: ['MPA(多页应用)', 'Vue', 'React']
+},
+{
+  type: 'list',
+  message: `请选择终端? `,
+  name: 'terminal',
+  when: answers => answers.type === 'Vue',
+  choices: ['PC端Vue3', 'PC端Vue2', '移动端Vue2']
+},
+{
+  type: 'input',
+  message: `项目名称: `,
+  name: 'name',
+  default: 'my-project'
+},
+{
+  type: 'input',
+  message: `项目描述: `,
+  name: 'description',
+  default: 'Description'
+},
+{
+  type: 'input',
+  message: `初始版本: `,
+  name: 'version',
+  default: '0.0.1'
+},
+{
+  type: 'input',
+  message: `server端口: `,
+  name: 'port',
+  default: '8080'
+},
+{
+  type: 'confirm',
+  message: `使用pug(jade)模版引擎? `,
+  name: 'template',
+  when: answers => answers.type === 'MPA(多页应用)',
+  default: true
+}
 ]
 
 if (program.init) {
@@ -97,7 +97,7 @@ if (program.init) {
         console.info(chalk.gray(`devServer: http://localhost:${answers.port}`))
         console.info('')
         console.info(
-          chalk.gray('参考文档: https://github.com/asasugar/j8-cli/')
+          chalk.gray('参考文档: https://github.com/asasugar/fast-web-cli/')
         )
         console.info('')
         console.info(
@@ -127,7 +127,7 @@ if (program.init) {
         )
       } else {
         spinner.warn([
-          '发生错误，请在https://github.com/asasugar/j8-cli/issues，Issues留言'
+          '发生错误，请在https://github.com/asasugar/fast-web-cli/issues，Issues留言'
         ])
         process.exit()
       }
