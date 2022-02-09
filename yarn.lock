@@ -746,10 +746,10 @@ object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.1"
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
-obtain-git-repo@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmmirror.com/obtain-git-repo/-/obtain-git-repo-1.0.1.tgz#79f1f3c31c6cf5ca0159edc35245c3c7698ce6a6"
-  integrity sha512-/Mp7pbiyfBtWYVBkEzd6L5JoM/8O/oO4CRUoxlv7chMPMugf6QJyHpb/k8Skn899SXP6ewkZOKdKovhBa0Ecyw==
+obtain-git-repo@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/obtain-git-repo/-/obtain-git-repo-1.0.2.tgz#9e13a1f20b7dd174a704deec358ead90b7f9b62c"
+  integrity sha512-aYhBbeWbIuPUG3QIOvETDj9PWGNVwjQjiNVoff0v6cTMN5ZzH2PoPC4egDdb2b9AMB40/SW2+5p7w5/NkYtuMA==
   dependencies:
     download "^8.0.0"
     git-clone "^0.2.0"

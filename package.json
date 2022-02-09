@@ -1,6 +1,6 @@
 {
   "name": "asasugar-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "生成多页、单页应用、npm插件开发模板cli工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,7 +27,7 @@
     "commander": "^2.17.1",
     "download-git-repo": "^1.1.0",
     "inquirer": "^6.1.0",
-    "ora": "^3.0.0",
-    "asasugar-cli": "^1.0.1"
+    "obtain-git-repo": "^1.0.2",
+    "ora": "^3.0.0"
   }
 }
