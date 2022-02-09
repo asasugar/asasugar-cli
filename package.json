@@ -1,6 +1,6 @@
 {
-  "name": "as-cli",
-  "version": "2.0.1",
+  "name": "asasugar-cli",
+  "version": "0.0.1",
   "description": "生成多页、单页应用、npm插件开发模板cli工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,19 +8,19 @@
   "packageManager": "yarn@1.22.0",
   "keywords": [
     "cli",
-    "as-cli"
+    "asasugar-cli"
   ],
   "bin": {
-    "@asasugar/cli": "./bin/index.js"
+    "@as/cli": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/asasugar/as-cli.git"
+    "url": "https://github.com/asasugar/asasugar-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/asasugar/as-cli/issues"
+    "url": "https://github.com/asasugar/asasugar-cli/issues"
   },
-  "homepage": "https://github.com/asasugar/as-cli#readme",
+  "homepage": "https://github.com/asasugar/asasugar-cli#readme",
   "author": "asasugar",
   "license": "ISC",
   "dependencies": {
@@ -29,6 +29,6 @@
     "download-git-repo": "^1.1.0",
     "inquirer": "^6.1.0",
     "ora": "^3.0.0",
-    "as-cli": "^1.0.1"
+    "asasugar-cli": "^1.0.1"
   }
 }
