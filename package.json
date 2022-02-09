@@ -1,17 +1,16 @@
 {
   "name": "asasugar-cli",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "生成多页、单页应用、npm插件开发模板cli工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "packageManager": "yarn@1.22.0",
   "keywords": [
     "cli",
     "asasugar-cli"
   ],
   "bin": {
-    "@as/cli": "./bin/index.js"
+    "asasugar-cli": "./bin/index.js"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,10 @@
 # asasugar-cli
 
-> 支持生成多页应用模板 cli 工具（目前支持生成 html 跟 pug 两种方式），单页应用支持 Vue 模板、React 模板
+> 多页应用模板 cli 工具（目前支持生成 html 跟 pug 两种方式）
 
+> 单页应用模板支持 Vue 模板、React 模板
+
+> npm插件开发模块支持pnpm管理package
 ## Start
 
 ```bash
@@ -11,10 +14,10 @@ npm i asasugar-cli -g # use npm
 yarn add asasugar-cli global  # use yarn
 
 # 查看版本
-@as/cli -V
+asasugar-cli -V
 
 # 创建项目
-@as/cli init
+asasugar-cli init
 ```
 
 
