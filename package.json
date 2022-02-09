@@ -1,28 +1,34 @@
 {
-  "name": "web-temp-cli",
-  "version": "2.0.0",
-  "description": "生成多页、单页应用模板cli工具",
+  "name": "as-cli",
+  "version": "2.0.1",
+  "description": "生成多页、单页应用、npm插件开发模板cli工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "packageManager": "yarn@1.22.0",
+  "keywords": [
+    "cli",
+    "as-cli"
+  ],
   "bin": {
-    "web-temp-cli": "./bin/index.js"
+    "@asasugar/cli": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/asasug/web-temp-cli.git"
+    "url": "https://github.com/asasugar/as-cli.git"
   },
-  "author": "xuexiongjie",
+  "bugs": {
+    "url": "https://github.com/asasugar/as-cli/issues"
+  },
+  "homepage": "https://github.com/asasugar/as-cli#readme",
+  "author": "asasugar",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.17.1",
     "download-git-repo": "^1.1.0",
     "inquirer": "^6.1.0",
-    "ora": "^3.0.0"
+    "ora": "^3.0.0",
+    "as-cli": "^1.0.1"
   }
 }

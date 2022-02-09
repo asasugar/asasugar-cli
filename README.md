@@ -1,4 +1,4 @@
-# web-temp-cli
+# as-cli
 
 > 支持生成多页应用模板 cli 工具（目前支持生成 html 跟 pug 两种方式），单页应用支持 Vue 模板、React 模板
 
@@ -6,16 +6,26 @@
 
 ```bash
 # 全局安装cli
-npm i web-temp-cli -g
+pnpm add as-cli -g # use pnpm
+npm i as-cli -g # use npm
+yarn add as-cli global  # use yarn
 
 # 查看版本
-web-temp-cli -V
+as-cli -V
 
 # 创建项目
-web-temp-cli init
+as-cli init
 ```
 
-## yarn
+
+## How to Use [Pnpm](https://github.com/pnpm/pnpm)
+
+```bash
+# 全局安装
+npm i pnpm -g
+```
+
+## How to Use Yarn
 
 ```bash
 # 全局安装
